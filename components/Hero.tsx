@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden pt-48 lg:pt-20">
+    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden pt-52 lg:pt-20">
       {/* Parallax Background */}
       <motion.div 
         style={{ y: y1 }}
@@ -17,10 +17,10 @@ const Hero: React.FC = () => {
       >
         <img 
           src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop" 
-          alt="Rope Access Technicians on building" 
+          alt="Técnicos de acesso por corda RPS em trabalho vertical" 
           className="w-full h-full object-cover scale-110"
         />
-        <div className="absolute inset-0 bg-[#0a0a0a]/70"></div>
+        <div className="absolute inset-0 bg-[#0a0a0a]/75"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent"></div>
       </motion.div>
 
@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
                   <div className="w-2 h-2 rounded-full bg-[#ff6b00] animate-ping"></div>
                   <div className="w-2 h-2 rounded-full bg-[#ff6b00] absolute"></div>
                 </div>
-                <span className="text-white/60 text-[8px] sm:text-[10px] font-black uppercase tracking-[0.2em]">Disponibilidade Imediata • Portugal</span>
+                <span className="text-white/60 text-[9px] font-black uppercase tracking-[0.25em]">Disponibilidade Imediata • Portugal</span>
               </motion.div>
 
               <div className="text-mask mb-6">
@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
                 transition={{ delay: 0.4, duration: 0.8 }}
                 className="text-lg lg:text-xl text-gray-400 mb-10 max-w-lg font-light leading-relaxed"
               >
-                Trabalhos verticais de elite. Sem andaimes, com segurança máxima e execução recorde em qualquer estrutura.
+                Trabalhos verticais de elite. Sem necessidade de andaimes, com segurança certificada e execução recorde.
               </motion.p>
               
               <motion.div 

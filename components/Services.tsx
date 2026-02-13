@@ -1,10 +1,12 @@
 
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { SERVICES } from '../constants';
 
 const Services: React.FC = () => {
-  const container = {
+  // Explicitly typing variants solves the issue where [number, number, number, number] 
+  // is incorrectly inferred as a generic number[]
+  const container: Variants = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
@@ -14,9 +16,16 @@ const Services: React.FC = () => {
     }
   };
 
-  const item = {
+  const item: Variants = {
     hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } }
+    show: { 
+      opacity: 1, 
+      y: 0, 
+      transition: { 
+        duration: 0.6, 
+        ease: [0.16, 1, 0.3, 1] 
+      } 
+    }
   };
 
   return (
@@ -57,7 +66,8 @@ const Services: React.FC = () => {
                 <img src={service.image} alt={service.title} className="w-full h-full object-cover grayscale" />
               </div>
               
-              <div className="absolute inset-0 bg-[#ff6b00] translate-y-full group-hover:translate-y-[85%] transition-transform duration-700 ease-[0.16, 1, 0.3, 1] opacity-10 z-0"></div>
+              {/* Fixed Tailwind cubic-bezier arbitrary value */}
+              <div className="absolute inset-0 bg-[#ff6b00] translate-y-full group-hover:translate-y-[85%] transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] opacity-10 z-0"></div>
               
               <div className="relative z-10 flex flex-col h-full">
                 <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 group-hover:bg-[#ff6b00]/10 text-white group-hover:text-[#ff6b00]">
