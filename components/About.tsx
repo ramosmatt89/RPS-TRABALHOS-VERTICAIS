@@ -11,14 +11,16 @@ const About: React.FC = () => {
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="relative"
           >
             <div className="aspect-[4/5] rounded-[3rem] overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(255,107,0,0.1)]">
               <img 
-                src="https://images.unsplash.com/photo-1524514587686-e2909d736e9b?q=80&w=1200&auto=format&fit=crop" 
+                src="https://images.unsplash.com/photo-1524514587686-e2909d736e9b?q=70&w=800&auto=format&fit=crop" 
                 alt="Profissional de Alpinismo Industrial RPS em rapel" 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+                loading="lazy"
               />
             </div>
             {/* Float Badge */}
@@ -36,6 +38,7 @@ const About: React.FC = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               className="mb-12"
             >
               <span className="text-[#ff6b00] font-black uppercase tracking-[0.3em] text-[10px] block mb-4">Manifesto Técnico</span>
@@ -55,6 +58,7 @@ const About: React.FC = () => {
                   key={i}
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
                   className="flex gap-6 group"
                 >
