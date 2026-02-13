@@ -19,7 +19,7 @@ const Portfolio: React.FC = () => {
             key={item.id}
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ once: true }}
             transition={{ delay: idx * 0.1, duration: 0.8 }}
             className="min-w-[320px] md:min-w-[600px] h-[450px] relative rounded-[3rem] overflow-hidden snap-center group cursor-pointer"
           >
@@ -27,7 +27,6 @@ const Portfolio: React.FC = () => {
               src={item.image} 
               alt={item.title} 
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" 
-              loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
             
