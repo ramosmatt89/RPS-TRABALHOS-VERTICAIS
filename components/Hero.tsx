@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import ContactForm from './ContactForm';
@@ -16,7 +15,6 @@ const Hero: React.FC = () => {
         style={{ y: y1 }}
         className="absolute inset-0 z-0"
       >
-        {/* Fix: Changed fetchpriority to fetchPriority to match React attribute naming conventions */}
         <img 
           src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=75&w=1600&auto=format&fit=crop" 
           alt="Técnicos de acesso por corda RPS em trabalho vertical" 
@@ -48,7 +46,7 @@ const Hero: React.FC = () => {
                   initial={{ y: "100%" }}
                   animate={{ y: 0 }}
                   transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                  className="text-5xl lg:text-8xl font-black leading-[0.95] tracking-tighter"
+                  className="text-5xl lg:text-8xl font-black leading-[1.1] tracking-tighter pt-4"
                 >
                   SOLUÇÕES <br /> 
                   EM <span className="orange-accent">ALTURA</span>

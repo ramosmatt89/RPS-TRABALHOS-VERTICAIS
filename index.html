@@ -39,8 +39,9 @@
             font-family: 'Montserrat', sans-serif;
             letter-spacing: -0.02em;
         }
+        /* Ajustado de 0 0 para 0 -20% para não cortar acentos (como o til de SOLUÇÕES) */
         .text-mask {
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 -20%, 100% -20%, 100% 120%, 0% 120%);
         }
         .bg-industrial {
             background-color: #0d0d0d;
