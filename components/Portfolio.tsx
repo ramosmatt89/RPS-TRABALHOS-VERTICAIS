@@ -5,7 +5,7 @@ import { PORTFOLIO } from '../constants';
 
 const Portfolio: React.FC = () => {
   return (
-    <section id="portfolio" className="py-32 bg-[#0a0a0a] overflow-hidden">
+    <section id="portfolio" className="py-20 lg:py-32 bg-[#0a0a0a] overflow-hidden">
       <div className="container mx-auto px-6 mb-16">
         <div className="text-center">
           <span className="text-[#ff6b00] font-black uppercase tracking-[0.3em] text-[10px] mb-4 block">Portfólio</span>

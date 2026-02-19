@@ -29,7 +29,7 @@ const Services: React.FC = () => {
   };
 
   return (
-    <section id="servicos" className="py-32 bg-[#0a0a0a] relative">
+    <section id="servicos" className="py-20 lg:py-32 bg-[#0a0a0a] relative">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
           <div className="max-w-2xl">

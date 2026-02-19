@@ -8,7 +8,10 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-industrial pt-20 pb-10 border-t border-white/5">
+    <footer 
+      className="bg-industrial pt-20 pb-10 border-t border-white/5"
+      style={{ paddingBottom: 'calc(env(safe-area-inset-bottom) + 2rem)' }}
+    >
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 lg:col-span-1">

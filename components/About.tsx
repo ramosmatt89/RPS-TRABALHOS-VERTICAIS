@@ -5,7 +5,7 @@ import { Shield, Target, Zap } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
-    <section id="sobre" className="py-32 bg-[#0a0a0a]">
+    <section id="sobre" className="py-20 lg:py-32 bg-[#0a0a0a]">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-24 items-center">
           <motion.div 
@@ -15,7 +15,7 @@ const About: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="aspect-[4/5] rounded-[3rem] overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(255,107,0,0.1)]">
+            <div className="aspect-[4/5] rounded-[2rem] lg:rounded-[3rem] overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(255,107,0,0.1)]">
               <img 
                 src="https://images.unsplash.com/photo-1524514587686-e2909d736e9b?q=70&w=800&auto=format&fit=crop" 
                 alt="Profissional de Alpinismo Industrial RPS em rapel" 
