@@ -18,7 +18,7 @@ const ContactForm: React.FC = () => {
       {/* Decorative Glow */}
       <div className="absolute -inset-1 bg-gradient-to-r from-[#ff6b00] to-orange-400 rounded-[2.5rem] blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
       
-      <div className="relative bg-[#0a0a0a]/60 backdrop-blur-3xl border border-white/10 p-8 lg:p-10 rounded-[2.5rem] shadow-2xl">
+      <div className="relative bg-[#0a0a0a]/60 backdrop-blur-3xl border border-white/10 p-6 lg:p-10 rounded-[2.5rem] shadow-2xl">
         <AnimatePresence mode="wait">
           {!submitted ? (
             <motion.div
