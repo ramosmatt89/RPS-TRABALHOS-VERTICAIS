@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-12 gap-16 lg:gap-16 items-center">
-          <div className="lg:col-span-7 pt-4 md:pt-0">
+          <div className="lg:col-span-7 pt-6 md:pt-0">
             <motion.div style={{ opacity }}>
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
                 <span className="text-white/60 text-[8px] lg:text-[9px] font-black uppercase tracking-[0.25em]">Disponibilidade Imediata • Portugal</span>
               </motion.div>
 
-              <div className="text-mask mb-6 lg:mb-6 mt-6 md:mt-0">
+              <div className="text-mask mb-6 lg:mb-6 mt-8 md:mt-0">
                 <motion.h1 
                   initial={{ y: "100%" }}
                   animate={{ y: 0 }}
