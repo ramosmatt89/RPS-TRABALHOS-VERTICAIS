@@ -45,8 +45,12 @@ const App: React.FC = () => {
         <About />
         <Benefits />
         <Portfolio />
-        <Testimonials />
-        <CTASection />
+        <div className="hidden md:block">
+          <Testimonials />
+        </div>
+        <div className="hidden md:block">
+          <CTASection />
+        </div>
       </main>
 
       <Footer />

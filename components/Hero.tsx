@@ -31,12 +31,12 @@ const Hero: React.FC = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-12 gap-16 lg:gap-16 items-center">
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 pt-4 md:pt-0">
             <motion.div style={{ opacity }}>
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                className="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full mb-8 lg:mb-8"
+                className="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full mb-8 lg:mb-8 hidden md:inline-flex"
               >
                 <div className="flex -space-x-1">
                   <div className="w-2 h-2 rounded-full bg-[#ff6b00] animate-ping"></div>
@@ -45,12 +45,12 @@ const Hero: React.FC = () => {
                 <span className="text-white/60 text-[8px] lg:text-[9px] font-black uppercase tracking-[0.25em]">Disponibilidade Imediata • Portugal</span>
               </motion.div>
 
-              <div className="text-mask mb-6 lg:mb-6">
+              <div className="text-mask mb-6 lg:mb-6 mt-6 md:mt-0">
                 <motion.h1 
                   initial={{ y: "100%" }}
                   animate={{ y: 0 }}
                   transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                  className="text-4xl sm:text-5xl lg:text-8xl font-black leading-[1.1] tracking-tighter pt-2 lg:pt-4"
+                  className="text-4xl sm:text-5xl lg:text-8xl font-black leading-[1.1] tracking-tighter pt-2 lg:pt-4 mt-0"
                 >
                   SOLUÇÕES <br /> 
                   EM <span className="orange-accent">ALTURA</span>
@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.8 }}
-                className="text-base lg:text-xl text-gray-400 mb-10 lg:mb-10 max-w-lg font-light leading-relaxed"
+                className="text-base lg:text-xl text-gray-400 mb-6 lg:mb-10 max-w-lg font-light leading-relaxed"
               >
                 Trabalhos verticais de elite. Sem necessidade de andaimes, com segurança certificada e execução recorde.
               </motion.p>
@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
-                className="flex items-center gap-6 lg:gap-10 mb-12 lg:mb-0"
+                className="flex items-center gap-6 lg:gap-10 mb-0"
               >
                 <div>
                   <div className="text-2xl lg:text-3xl font-black">100%</div>
@@ -90,7 +90,7 @@ const Hero: React.FC = () => {
             </motion.div>
           </div>
 
-          <div className="lg:col-span-5 lg:pt-32">
+          <div className="lg:col-span-5 lg:pt-32 mt-2 md:mt-0">
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 40 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}

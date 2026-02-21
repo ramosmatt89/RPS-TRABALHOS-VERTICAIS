@@ -35,6 +35,14 @@ const About: React.FC = () => {
           </motion.div>
 
           <div>
+            <div className="mb-12 rounded-2xl overflow-hidden">
+              <img
+                src="https://picsum.photos/seed/worker/800/600"
+                alt="Trabalhador em alturas com equipamento"
+                className="w-full h-auto object-cover"
+                referrerPolicy="no-referrer"
+              />
+            </div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
